@@ -1,0 +1,9 @@
+chardet==4.0.0
+nidaqmx==0.5.7
+numpy==1.21.5
+openpyxl==3.0.9
+pygame==2.1.2
+PyQt5==5.15.6
+PySide2==5.15.2.1
+pythonnet==2.5.2
+pywin32==303

@@ -1,0 +1,11 @@
+pyinstaller -D Main.py -n parathyroid --workpath ..\build\para\temp  --distpath D:\共享 --add-data "Config;Config" --add-data "Drive;Drive" --add-data "Language;Language" --add-data "Model;Model" --add-data "Presenter;Presenter" --add-data "Utils;Utils" --add-data "View;View" --add-data "WinIo64.dll;." --add-data "WinIo64.sys;."
+
+pyinstaller -D -w Main.py -n parathyroid --workpath ..\build\para\temp  --distpath ..\build\para\dist --add-data "Config;Config" --add-data "Drive;Drive" --add-data "Language;Language" --add-data "Model;Model" --add-data "Presenter;Presenter" --add-data "Utils;Utils" --add-data "View;View" --add-data "WinIo64.dll;." --add-data "WinIo64.sys;."
+
+单个文件，需要控制台  直接关闭控制台结束进程的行为会导致C盘临时文件得不到清理
+pyinstaller -F Main.py -n parathyroid --workpath ..\build\para\temp  --distpath D:\共享 --add-data "Config;Config" --add-data "Drive;Drive" --add-data "Language;Language" --add-data "Model;Model" --add-data "Presenter;Presenter" --add-data "Utils;Utils" --add-data "View;View" --add-data "WinIo64.dll;." --add-data "WinIo64.sys;."
+
+pyinstaller -F -w Main.py -n parathyroid --workpath ..\build\para\temp  --distpath D:\共享 --add-data "Config;Config" --add-data "Drive;Drive" --add-data "Language;Language" --add-data "Model;Model" --add-data "Presenter;Presenter" --add-data "Utils;Utils" --add-data "View;View" --add-data "WinIo64.dll;." --add-data "WinIo64.sys;."
+
+
+打包为单个文件需要携带Config文件夹和WinIo64.dll WinIo64.sys 文件才能正常运行

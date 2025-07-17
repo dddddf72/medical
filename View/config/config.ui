@@ -1,0 +1,888 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1280</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout" stretch="5,5">
+    <item>
+     <widget class="QGroupBox" name="groupBox_7">
+      <property name="title">
+       <string/>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_7">
+       <item>
+        <widget class="QGroupBox" name="groupBox_8">
+         <property name="title">
+          <string>操作</string>
+         </property>
+         <widget class="QLabel" name="label">
+          <property name="geometry">
+           <rect>
+            <x>120</x>
+            <y>10</y>
+            <width>381</width>
+            <height>81</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>15</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>注意：大部分配置修改后需要重启应用
+警告：非技术人员请勿轻易修改配置</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="rebootPushButton">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>100</y>
+            <width>75</width>
+            <height>23</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>9</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>重启应用</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="recoveryPushButton">
+          <property name="geometry">
+           <rect>
+            <x>90</x>
+            <y>100</y>
+            <width>80</width>
+            <height>23</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>9</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>恢复出厂设置</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_2">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>80</y>
+            <width>54</width>
+            <height>12</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>重启</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_3">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>140</y>
+            <width>71</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>激光器控制</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="openLaserPushButton">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>160</y>
+            <width>75</width>
+            <height>23</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>打开</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="closeLaserPushButton">
+          <property name="geometry">
+           <rect>
+            <x>90</x>
+            <y>160</y>
+            <width>75</width>
+            <height>23</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>关闭</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="openLightPushButton">
+          <property name="geometry">
+           <rect>
+            <x>290</x>
+            <y>160</y>
+            <width>75</width>
+            <height>23</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>打开</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="closeLightPushButton">
+          <property name="geometry">
+           <rect>
+            <x>370</x>
+            <y>160</y>
+            <width>75</width>
+            <height>23</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>关闭</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_4">
+          <property name="geometry">
+           <rect>
+            <x>290</x>
+            <y>140</y>
+            <width>71</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>光开关控制</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="modeBouncePushButton">
+          <property name="geometry">
+           <rect>
+            <x>170</x>
+            <y>220</y>
+            <width>75</width>
+            <height>23</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>抬起</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="readShortPushButton">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>280</y>
+            <width>75</width>
+            <height>23</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>短按</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="readPressPushButton">
+          <property name="geometry">
+           <rect>
+            <x>90</x>
+            <y>280</y>
+            <width>75</width>
+            <height>23</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>按下</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="readBouncePushButton">
+          <property name="geometry">
+           <rect>
+            <x>170</x>
+            <y>280</y>
+            <width>75</width>
+            <height>23</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>抬起</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_5">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>260</y>
+            <width>54</width>
+            <height>12</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>检测键：</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="modePressPushButton">
+          <property name="geometry">
+           <rect>
+            <x>90</x>
+            <y>220</y>
+            <width>75</width>
+            <height>23</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>按下</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_6">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>200</y>
+            <width>54</width>
+            <height>12</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>模式键：</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_13">
+          <property name="geometry">
+           <rect>
+            <x>290</x>
+            <y>80</y>
+            <width>54</width>
+            <height>12</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>手术数据</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="exportPushButton">
+          <property name="geometry">
+           <rect>
+            <x>290</x>
+            <y>100</y>
+            <width>75</width>
+            <height>23</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>导出</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="readStatusLabel">
+          <property name="geometry">
+           <rect>
+            <x>60</x>
+            <y>260</y>
+            <width>54</width>
+            <height>12</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>状态</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="modeStatusLabel">
+          <property name="geometry">
+           <rect>
+            <x>60</x>
+            <y>200</y>
+            <width>54</width>
+            <height>12</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>状态</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_16">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>320</y>
+            <width>70</width>
+            <height>12</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>采集卡数据：</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="niDataLabel">
+          <property name="geometry">
+           <rect>
+            <x>90</x>
+            <y>305</y>
+            <width>91</width>
+            <height>41</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>15</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>实时数据</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="modeShortPushButton">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>220</y>
+            <width>75</width>
+            <height>23</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>短按</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="updatePushButton">
+          <property name="geometry">
+           <rect>
+            <x>370</x>
+            <y>100</y>
+            <width>75</width>
+            <height>23</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>选择</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_14">
+          <property name="geometry">
+           <rect>
+            <x>370</x>
+            <y>80</y>
+            <width>54</width>
+            <height>12</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>软件更新</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_7">
+          <property name="geometry">
+           <rect>
+            <x>290</x>
+            <y>200</y>
+            <width>54</width>
+            <height>12</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>快捷方式</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="exitPushButton">
+          <property name="geometry">
+           <rect>
+            <x>290</x>
+            <y>220</y>
+            <width>75</width>
+            <height>23</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>关闭应用</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="explorerPushButton">
+          <property name="geometry">
+           <rect>
+            <x>370</x>
+            <y>220</y>
+            <width>75</width>
+            <height>23</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>打开桌面</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="oskPushButton">
+          <property name="geometry">
+           <rect>
+            <x>450</x>
+            <y>220</y>
+            <width>75</width>
+            <height>23</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>软键盘</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="niInfoLabel">
+          <property name="geometry">
+           <rect>
+            <x>190</x>
+            <y>315</y>
+            <width>401</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>采集卡信息</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_15">
+          <property name="geometry">
+           <rect>
+            <x>450</x>
+            <y>80</y>
+            <width>54</width>
+            <height>12</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>配置固化</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="solidifyConfigPushButton">
+          <property name="geometry">
+           <rect>
+            <x>450</x>
+            <y>100</y>
+            <width>75</width>
+            <height>23</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>固化</string>
+          </property>
+         </widget>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox">
+         <property name="title">
+          <string>基础配置</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <item>
+           <layout class="QFormLayout" name="formLayout">
+            <item row="1" column="0">
+             <widget class="QLabel" name="viewLabel">
+              <property name="text">
+               <string>界面层</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <widget class="QComboBox" name="viewComboBox"/>
+            </item>
+            <item row="2" column="0">
+             <widget class="QLabel" name="modelLabel">
+              <property name="text">
+               <string>数据层</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <widget class="QComboBox" name="modelComboBox"/>
+            </item>
+            <item row="3" column="0">
+             <widget class="QLabel" name="logLabel">
+              <property name="text">
+               <string>日志</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="1">
+             <widget class="QComboBox" name="logComboBox"/>
+            </item>
+            <item row="4" column="0">
+             <widget class="QLabel" name="logPrintLabel">
+              <property name="text">
+               <string>控制台日志打印</string>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="1">
+             <widget class="QComboBox" name="logPrintComboBox"/>
+            </item>
+            <item row="5" column="0">
+             <widget class="QLabel" name="volumeLabel">
+              <property name="text">
+               <string>音量</string>
+              </property>
+             </widget>
+            </item>
+            <item row="5" column="1">
+             <widget class="QDoubleSpinBox" name="volumeDoubleSpinBox"/>
+            </item>
+            <item row="6" column="0">
+             <widget class="QLabel" name="niDeviceIdLabel">
+              <property name="text">
+               <string>数据采集卡设备id</string>
+              </property>
+             </widget>
+            </item>
+            <item row="6" column="1">
+             <widget class="QLineEdit" name="niDeviceIdLineEdit"/>
+            </item>
+            <item row="7" column="0">
+             <widget class="QLabel" name="niRatioLabel">
+              <property name="text">
+               <string>采集数据的系数</string>
+              </property>
+             </widget>
+            </item>
+            <item row="7" column="1">
+             <widget class="QDoubleSpinBox" name="niRatioDoubleSpinBox"/>
+            </item>
+            <item row="8" column="0">
+             <widget class="QLabel" name="niCompensateLabel">
+              <property name="text">
+               <string>采集数据的补偿</string>
+              </property>
+             </widget>
+            </item>
+            <item row="8" column="1">
+             <widget class="QDoubleSpinBox" name="niCompensateDoubleSpinBox"/>
+            </item>
+            <item row="9" column="0">
+             <widget class="QLabel" name="readLongLabel">
+              <property name="text">
+               <string>长按读值</string>
+              </property>
+             </widget>
+            </item>
+            <item row="9" column="1">
+             <widget class="QComboBox" name="readLongComboBox"/>
+            </item>
+            <item row="0" column="0">
+             <widget class="QLabel" name="snLabel">
+              <property name="text">
+               <string>序列号</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QLineEdit" name="snLineEdit"/>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QGroupBox" name="groupBox_2">
+      <property name="title">
+       <string>界面配置</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QGroupBox" name="groupBox_3">
+         <property name="title">
+          <string>预热</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_3">
+          <item>
+           <layout class="QFormLayout" name="formLayout_2">
+            <item row="0" column="0">
+             <widget class="QLabel" name="preheatLabel">
+              <property name="text">
+               <string>预热时长</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QSpinBox" name="preheatSpinBox"/>
+            </item>
+            <item row="1" column="0">
+             <widget class="QLabel" name="laserPowerLabel">
+              <property name="text">
+               <string>激光功率</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <widget class="QSpinBox" name="laserPowerSpinBox"/>
+            </item>
+            <item row="3" column="0">
+             <widget class="QLabel" name="laserPowerMinLabel">
+              <property name="text">
+               <string>激光功率最小值</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="1">
+             <widget class="QSpinBox" name="laserPowerMinSpinBox"/>
+            </item>
+            <item row="4" column="0">
+             <widget class="QLabel" name="laserPowerMaxLabel">
+              <property name="text">
+               <string>激光功率最大值</string>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="1">
+             <widget class="QSpinBox" name="laserPowerMaxSpinBox"/>
+            </item>
+            <item row="5" column="0">
+             <widget class="QLabel" name="laserCheckIntervalLabel">
+              <property name="text">
+               <string>检查间隔时间</string>
+              </property>
+             </widget>
+            </item>
+            <item row="5" column="1">
+             <widget class="QDoubleSpinBox" name="laserCheckIntervalDoubleSpinBox"/>
+            </item>
+            <item row="6" column="0">
+             <widget class="QLabel" name="laserStableCheckMaxLabel">
+              <property name="text">
+               <string>检查稳定要求次数</string>
+              </property>
+             </widget>
+            </item>
+            <item row="6" column="1">
+             <widget class="QSpinBox" name="laserStableCheckMaxSpinBox"/>
+            </item>
+            <item row="7" column="0">
+             <widget class="QLabel" name="laserCheckRetryMaxLabel">
+              <property name="text">
+               <string>最高重试次数</string>
+              </property>
+             </widget>
+            </item>
+            <item row="7" column="1">
+             <widget class="QSpinBox" name="laserCheckRetryMaxSpinBox"/>
+            </item>
+            <item row="8" column="0">
+             <widget class="QLabel" name="offsetTimesLabel">
+              <property name="text">
+               <string>偏置取值次数</string>
+              </property>
+             </widget>
+            </item>
+            <item row="8" column="1">
+             <widget class="QSpinBox" name="offsetTimesSpinBox"/>
+            </item>
+            <item row="9" column="0">
+             <widget class="QLabel" name="offsetMinLabel">
+              <property name="text">
+               <string>偏置最小值</string>
+              </property>
+             </widget>
+            </item>
+            <item row="9" column="1">
+             <widget class="QDoubleSpinBox" name="offsetMinDoubleSpinBox"/>
+            </item>
+            <item row="10" column="0">
+             <widget class="QLabel" name="offsetMaxLabel">
+              <property name="text">
+               <string>偏置最大值</string>
+              </property>
+             </widget>
+            </item>
+            <item row="10" column="1">
+             <widget class="QDoubleSpinBox" name="offsetMaxDoubleSpinBox"/>
+            </item>
+            <item row="2" column="0">
+             <widget class="QLabel" name="laserPowerCompensateLabel">
+              <property name="text">
+               <string>激光功率损耗补偿</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <widget class="QSpinBox" name="laserPowerCompensateSpinBox"/>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_4">
+         <property name="title">
+          <string>自检</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_4">
+          <item>
+           <layout class="QFormLayout" name="formLayout_3">
+            <item row="0" column="0">
+             <widget class="QLabel" name="presetImitationFluorescenceLabel">
+              <property name="text">
+               <string>仿体预设荧光值</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QDoubleSpinBox" name="presetImitationFluorescenceDoubleSpinBox"/>
+            </item>
+            <item row="1" column="0">
+             <widget class="QLabel" name="fluorescenceDifferenceMaxLabel">
+              <property name="text">
+               <string>荧光值的最大差值</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <widget class="QDoubleSpinBox" name="fluorescenceDifferenceMaxDoubleSpinBox"/>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_5">
+         <property name="title">
+          <string>基准值</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_5">
+          <item>
+           <layout class="QFormLayout" name="formLayout_4">
+            <item row="0" column="0">
+             <widget class="QLabel" name="referentMinLabel">
+              <property name="text">
+               <string>最小基准值</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QDoubleSpinBox" name="referentMinDoubleSpinBox"/>
+            </item>
+            <item row="1" column="0">
+             <widget class="QLabel" name="referentMaxLabel">
+              <property name="text">
+               <string>最大基准值</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <widget class="QDoubleSpinBox" name="referentMaxDoubleSpinBox"/>
+            </item>
+            <item row="2" column="0">
+             <widget class="QLabel" name="triesLimitLabel">
+              <property name="text">
+               <string>取值次数</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <widget class="QSpinBox" name="triesLimitSpinBox"/>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_6">
+         <property name="title">
+          <string>测量值</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_6">
+          <item>
+           <layout class="QFormLayout" name="formLayout_5">
+            <item row="1" column="0">
+             <widget class="QLabel" name="multipleThresholdLabel">
+              <property name="text">
+               <string>通过基准值得到阈值的倍数</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <widget class="QDoubleSpinBox" name="multipleThresholdDoubleSpinBox"/>
+            </item>
+            <item row="3" column="0">
+             <widget class="QLabel" name="multipleMaxLabel">
+              <property name="text">
+               <string>进度条显示的基准值最大倍数</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="1">
+             <widget class="QDoubleSpinBox" name="multipleMaxDoubleSpinBox"/>
+            </item>
+            <item row="0" column="0">
+             <widget class="QLabel" name="playTimeLabel">
+              <property name="text">
+               <string>短按报警时长</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QSpinBox" name="playTimeSpinBox"/>
+            </item>
+            <item row="2" column="0">
+             <widget class="QLabel" name="multipleRedLabel">
+              <property name="text">
+               <string>出现红色时的基准值倍数</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <widget class="QDoubleSpinBox" name="multipleRedDoubleSpinBox"/>
+            </item>
+            <item row="4" column="0">
+             <widget class="QLabel" name="readLongTriggerLabel">
+              <property name="text">
+               <string>长按读值触发时长</string>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="1">
+             <widget class="QDoubleSpinBox" name="readLongTriggerDoubleSpinBox"/>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1280</width>
+     <height>23</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
